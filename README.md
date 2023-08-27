@@ -1,13 +1,11 @@
 # sql-challenge
-
-
-
 ### Data Modeling
 Scetched ERD using [QuickDBD](https://app.quickdatabasediagrams.com/)
 image saved as 'Data_Modeling_QuickDBD.png'
 
 ### Data Engineering
-pgAdmin 4 was used to write script: Employee_schema.sql
+pgAdmin 4 was used to write script: Employee_schema.sql.
+
 6 tables were created from 6 CSV files (In data folder).
 Data types, primary keys, and foreign keys were defined.
 CSV files were imported to the corresponding tables.
@@ -19,7 +17,8 @@ CSV files were imported to the corresponding tables.
 - salaries
 
 ### Data Analysis
-pgAdmin 4 was used to write script: Employee_queries.sql
+pgAdmin 4 was used to write script: Employee_queries.sql.
+
 Queries created for the following:
 1. List the employee number, last name, first name, sex, and salary of each employee.
 2. List the first name, last name, and hire date for the employees who were hired in 1986.
