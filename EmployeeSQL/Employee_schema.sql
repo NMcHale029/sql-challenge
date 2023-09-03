@@ -1,9 +1,10 @@
--- DROP TABLE dept_emp;
--- DROP TABLE dept_manager;
--- DROP TABLE salaries;
--- DROP TABLE titles;
--- DROP TABLE employees;
--- DROP TABLE departments;
+DROP TABLE dept_emp;
+DROP TABLE dept_manager;
+DROP TABLE salaries;
+DROP TABLE titles;
+DROP TABLE employees;
+DROP TABLE departments;
+
 
 CREATE TABLE "titles" (
     "title_id" VARCHAR(30) PRIMARY KEY NOT NULL,
@@ -37,7 +38,7 @@ CREATE TABLE "dept_emp" (
 CREATE TABLE "dept_manager" (
     "dept_no" VARCHAR(30) NOT NULL,
     "emp_no" int NOT NULL,
-	PRIMARY KEY (dept_no, emp_no)
+	PRIMARY KEY (dept_no, emp_no),
 	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
 	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
